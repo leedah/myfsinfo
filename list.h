@@ -11,40 +11,40 @@
 enum fieldtype { PID, RCHAR, WCHAR, SYSR, SYSW, RFS, WFS} ;
 
 typedef struct Record{
-	
-	char 		type;
-	mode_t 		mode;
-	int 		nlinks;
-	char		user[MAX_USR_NAME];
-	char		group[MAX_GR_NAME];
-	long int	size;	
-	char  		path[PATH_MAX + 1];
+    
+    char        type;
+    mode_t      mode;
+    int         nlinks;
+    char        user[MAX_USR_NAME];
+    char        group[MAX_GR_NAME];
+    long int    size;   
+    char        path[PATH_MAX + 1];
 
 } Record;
 
 
 typedef struct Record2{
-	
-	pid_t				PID;
-	unsigned long int 	RCHAR;
-	unsigned long int 	WCHAR;
-	unsigned long int 	SYSR;
-	unsigned long int 	SYSW;
-	unsigned long int 	RFS;
-	unsigned long int 	WFS;
+    
+    pid_t               PID;
+    unsigned long int   RCHAR;
+    unsigned long int   WCHAR;
+    unsigned long int   SYSR;
+    unsigned long int   SYSW;
+    unsigned long int   RFS;
+    unsigned long int   WFS;
 
 } Record2;
 
 typedef struct Node{
-	void* record;
-	struct Node* next;
-	struct Node* previous;
+    void* record;
+    struct Node* next;
+    struct Node* previous;
 } Node;
 
 typedef struct List{
-	Node* head;
-	Node* last;
-	int size;
+    Node* head;
+    Node* last;
+    int size;
 } List;
 
 int createList(List** list);
