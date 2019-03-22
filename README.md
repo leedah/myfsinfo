@@ -3,7 +3,7 @@ A system program that provides useful information about processes, files and the
 
 It uses both system calls and the information provided by the /proc virtual filesystem in order to display information from the i-nodes as well as to have access to the content of directories, symbolic links and files of various types.
 
-Project in the context of the Operation Systems course in Fall 2015 at University of Athens.
+Project in the context of the Operating Systems course in Fall 2015 at University of Athens.
 
 ## Features
 
